@@ -5,18 +5,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailDetailsComponent } from './cocktail-details/cocktail-details.component';
+import { FormsModule } from '@angular/forms';
+import { FruitComponent } from './fruit/fruit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CocktailListComponent,
-    CocktailDetailsComponent
+    CocktailDetailsComponent,
+    FruitComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

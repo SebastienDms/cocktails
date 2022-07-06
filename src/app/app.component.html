@@ -3,3 +3,17 @@
   <app-cocktail-list class="flex-50 pr-10"></app-cocktail-list>
   <app-cocktail-details class="flex-50 pl-10"></app-cocktail-details>
 </div>
+<div class="container d-flex flex-column">
+  <div class="d-flex flex-row">
+    <input #myinput class="m-10 flex-fill" type="text" />
+    <!-- [(ngModel)]="fruit" -->
+    <button class="btn btn-primary m-10" (click)="addFruit()">Ajouter</button>
+  </div>
+  <ul class="list-primary m-10">
+    <app-fruit
+      (eventDeleteF)="deleteFruit($event)"
+      [fruit]="f"
+      *ngFor="let f of fruits"
+    ></app-fruit>
+  </ul>
+</div>
