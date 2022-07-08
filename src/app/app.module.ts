@@ -8,10 +8,12 @@ import { CocktailDetailsComponent } from './cocktail-container/cocktail-details/
 import { CocktailListComponent } from './cocktail-container/cocktail-list/cocktail-list.component';
 import { FormsModule } from '@angular/forms';
 import { FruitComponent } from './fruit/fruit.component';
+import { ElementGras } from './cocktail-container/Directives/gras.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ElementGras,
     HeaderComponent,
     CocktailListComponent,
     CocktailDetailsComponent,
