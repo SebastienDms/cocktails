@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { FruitComponent } from './fruit/fruit.component';
 import { ElementGras } from './cocktail-container/Directives/gras.directive';
 import { IfDirective } from './cocktail-container/Directives/if.directive';
+import { AddAlimentComponent } from './aliment/add-aliment/add-aliment.component';
+import { ListAlimentComponent } from './aliment/list-aliment/list-aliment.component';
+import { AlimentService } from './aliment/aliment.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,11 @@ import { IfDirective } from './cocktail-container/Directives/if.directive';
     FruitComponent,
     CocktailContainerComponent,
     IfDirective,
+    AddAlimentComponent,
+    ListAlimentComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [AlimentService], //singleton
   bootstrap: [AppComponent],
 })
 export class AppModule {}
