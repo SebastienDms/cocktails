@@ -9,6 +9,7 @@ import { CocktailListComponent } from './cocktail-container/cocktail-list/cockta
 import { FormsModule } from '@angular/forms';
 import { FruitComponent } from './fruit/fruit.component';
 import { ElementGras } from './cocktail-container/Directives/gras.directive';
+import { IfDirective } from './cocktail-container/Directives/if.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ElementGras } from './cocktail-container/Directives/gras.directive';
     CocktailDetailsComponent,
     FruitComponent,
     CocktailContainerComponent,
+    IfDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
