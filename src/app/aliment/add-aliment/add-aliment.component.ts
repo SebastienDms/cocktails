@@ -14,8 +14,8 @@ export class AddAlimentComponent implements OnInit {
   ngOnInit(): void {}
 
   addAliment() {
-    this.alimentService.aliments.push(this.aliment);
+    this.alimentService.addOne(this.aliment);
     this.aliment = '';
-    console.log(this.alimentService.aliments);
+    // console.log(this.alimentService.aliments);
   }
 }

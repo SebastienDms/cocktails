@@ -12,7 +12,7 @@ import { ElementGras } from './cocktail-container/Directives/gras.directive';
 import { IfDirective } from './cocktail-container/Directives/if.directive';
 import { AddAlimentComponent } from './aliment/add-aliment/add-aliment.component';
 import { ListAlimentComponent } from './aliment/list-aliment/list-aliment.component';
-import { AlimentService } from './aliment/aliment.service';
+// import { AlimentService } from './aliment/aliment.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { AlimentService } from './aliment/aliment.service';
     ListAlimentComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [AlimentService], //singleton
+  providers: [], // [AlimentService], ==> singleton
   bootstrap: [AppComponent],
 })
 export class AppModule {}
