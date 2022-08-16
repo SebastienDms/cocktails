@@ -33,8 +33,9 @@ export class CocktailService {
     this.cocktails$.value[0]
   );
 
-  constructor() {
-    console.log(this.cocktails$.value);
-    console.log(this.selectedCocktail$.value);
+  public selectCocktail(index: number): void {
+    this.selectedCocktail$.next(this.cocktails$.value[index]);
   }
+
+  constructor() {}
 }

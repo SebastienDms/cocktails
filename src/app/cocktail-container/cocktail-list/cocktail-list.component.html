@@ -1,7 +1,7 @@
 <h3 class="mb-20">Liste des cocktails</h3>
 <ul class="list-primary mb-20">
   <li
-    [elementGras]="{ color: 'green', backgroundColor: 'black' }"
+    [appSelected]="cocktail.name === selectedCocktail.name"
     (click)="selectCocktail(index)"
     *ngFor="let cocktail of cocktails; let index = index"
   >
@@ -10,4 +10,8 @@
 </ul>
 <button class="btn btn-primary">Ajouter un cocktail</button>
 
-<!-- <button *appIf="false">Hello</button> -->
+<!-- 
+  <li
+    [elementGras]="{ color: 'green', backgroundColor: 'black' }"
+  >
+  <button *appIf="false">Hello</button> -->
